@@ -48,6 +48,21 @@ header nav ul li a:focus {
   text-decoration: underline;
 }
 
+.main-images {
+  margin: 20px;
+  border-radius: 6px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "item1 item3"
+    "item2 item3";
+}
+
+.small-images {
+  display: grid;
+  grid-template-columns: 15%;
+}
 footer {
   text-align: center;
 }
