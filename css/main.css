@@ -12,7 +12,13 @@ html {
 
 body {
   margin: 0;
-  /* include your font family and default line-height */
+  font-family: "Encode Sans";
+  line-height: 1.5;
+}
+
+.logo {
+  width: 300px;
+  height: 200px;
 }
 
 img {
@@ -20,20 +26,24 @@ img {
 }
 
 .wrapper {
-  max-width: 1400px;
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #BEB793;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
   gap: 1.5rem;
+
 }
 
 header nav ul li a {
@@ -53,16 +63,49 @@ header nav ul li a:focus {
   border-radius: 6px;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "item1 item3"
     "item2 item3";
 }
 
-.small-images {
-  display: grid;
-  grid-template-columns: 15%;
+.item1 {
+  grid-area: item1;
 }
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.cart-details-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  align-self: flex-end;
+  background-color: #224229;
+  color: #ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px/5px;
+  margin-right: 20px;
+}
+
+.small-images {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.background-color-info {
+  background-color: #BEB793;
+  margin: 0;
+}
+
 footer {
   text-align: center;
 }
