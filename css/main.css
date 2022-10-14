@@ -208,7 +208,7 @@ footer {
 
 
 /* Add media query for desktop */
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 70em) {
 
 .small-images {
   display: grid;
