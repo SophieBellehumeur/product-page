@@ -19,6 +19,13 @@ body {
 .logo {
   width: 300px;
   height: 200px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 0.5em;
+  margin-right: 1em;
 }
 
 img {
@@ -36,7 +43,6 @@ header {
   align-items: center;
   background-color: #BEB793;
   margin: 0 auto;
-  max-width: 1400px;
 }
 
 header nav ul {
@@ -59,7 +65,9 @@ header nav ul li a:focus {
 }
 
 .main-images {
-  margin: 20px;
+  margin: 5rem auto;
+  max-width: 800px;
+  max-height: 500px;
   border-radius: 6px;
   display: grid;
   gap: 2rem;
@@ -86,19 +94,36 @@ header nav ul li a:focus {
   justify-content: space-between;
 }
 
+h1 {
+  color: #224229;
+}
+
+h2 {
+  color: #224229;
+}
+
+.money-tree {
+  padding-top: 5em;
+}
+
 .button {
   align-self: flex-end;
   background-color: #224229;
   color: #ffff;
-  padding: 0.5rem 1rem;
-  border-radius: 20px/5px;
+  padding: 0.25rem 2rem;
+  border-radius: 10px;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .small-images {
   display: flex;
   justify-content: space-around;
+}
 
+.small {
+  border-style: solid;
+  border-color: #224229;
 }
 
 .background-color-info {
@@ -106,16 +131,34 @@ header nav ul li a:focus {
   margin: 0;
 }
 
+.description {
+  padding-top: 1em;
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  margin: 40px;
+}
+
+cite {
+  padding: 1em;
+}
+
 footer {
   text-align: center;
+  color: #224229;
 }
 
 
 /* Default styling for all screens ends here */
 
 /* Add media query for tablet */
+@media only screen and (min-width: 38em) {
 
+}
 
 
 
 /* Add media query for desktop */
+@media only screen and (min-width: 60em) { 
