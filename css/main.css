@@ -49,7 +49,6 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 header nav ul li a {
@@ -62,6 +61,10 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a:focus {
   text-decoration: underline;
+}
+
+.top-half {
+  padding: 1em;
 }
 
 .main-images {
@@ -106,7 +109,7 @@ h2 {
   align-self: flex-end;
   background-color: #224229;
   color: #ffff;
-  padding: 0.25em 2em;
+  padding: .2em 1em;
   border-radius: 10px;
   margin-right: 2em;
   margin-bottom: 1em;
@@ -127,7 +130,7 @@ h2 {
 }
 
 .description {
-  padding-top: 1em;
+  padding: 1em;
 }
 
 .quotes {
@@ -151,21 +154,80 @@ footer {
 /* Add media query for tablet */
 @media only screen and (min-width: 38em) {
 
+.main-images {
+  width: 50%;
+  gap: .5em;
+  margin: .5em;
+  align-items: center;
+  padding: 0;
+}
+
+.right-aligned {
+  width: 50%;
+}
+
 .top-half {
   display: flex;
-
 }
 
 .background-color-info {
   display: flex;
 }
+
+
 .people {
   display: flex;
+  width: 50%;
 }
 
+.quotes {
+  width: 60%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.smalls {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  width: 50%;
+}
+
+.small-images {
+  margin: 0 auto;
+  padding: o;
+}
+
+.logo {
+  width: 500px;
+  height:300px;
 }
 
 
 
 /* Add media query for desktop */
 @media only screen and (min-width: 60em) {
+
+.small-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%
+}
+
+.background-color-info {
+  margin-top: 1em;
+}
+
+.quotes {
+  width: 100%;
+}
+
+.smalls {
+  flex-direction: column;
+}
+
+}
