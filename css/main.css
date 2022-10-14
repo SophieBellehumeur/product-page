@@ -21,6 +21,8 @@ body {
   height: 200px;
   padding-left: 10px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 nav {
@@ -38,9 +40,6 @@ img {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #BEB793;
   margin: 0 auto;
 }
@@ -48,7 +47,8 @@ header {
 header nav ul {
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
@@ -65,12 +65,12 @@ header nav ul li a:focus {
 }
 
 .main-images {
-  margin: 5rem auto;
+  margin: 2em auto;
   max-width: 800px;
   max-height: 500px;
   border-radius: 6px;
   display: grid;
-  gap: 2rem;
+  gap: 2em;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "item1 item3"
@@ -102,23 +102,18 @@ h2 {
   color: #224229;
 }
 
-.money-tree {
-  padding-top: 5em;
-}
-
 .button {
   align-self: flex-end;
   background-color: #224229;
   color: #ffff;
-  padding: 0.25rem 2rem;
+  padding: 0.25em 2em;
   border-radius: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  margin-right: 2em;
+  margin-bottom: 1em;
 }
 
 .small-images {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
 }
 
 .small {
@@ -137,7 +132,7 @@ h2 {
 
 .quotes {
   display: grid;
-  grid-template-columns: 0.5fr;
+  grid-template-columns: 0.75fr;
   margin: 40px;
 }
 
@@ -156,9 +151,21 @@ footer {
 /* Add media query for tablet */
 @media only screen and (min-width: 38em) {
 
+.top-half {
+  display: flex;
+
+}
+
+.background-color-info {
+  display: flex;
+}
+.people {
+  display: flex;
+}
+
 }
 
 
 
 /* Add media query for desktop */
-@media only screen and (min-width: 60em) { 
+@media only screen and (min-width: 60em) {
