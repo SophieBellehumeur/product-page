@@ -90,6 +90,8 @@ header nav ul li a:focus {
 
 .item3 {
   grid-area: item3;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cart-details-grid {
@@ -168,6 +170,7 @@ footer {
 
 .top-half {
   display: flex;
+  align-items: flex-start;
 }
 
 .background-color-info {
