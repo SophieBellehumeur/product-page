@@ -177,7 +177,6 @@ footer {
   display: flex;
 }
 
-
 .people {
   display: flex;
   width: 50%;
@@ -200,7 +199,7 @@ footer {
 
 .small-images {
   margin: 0 auto;
-  padding: o;
+  padding: 0;
 }
 
 .logo {
@@ -218,19 +217,18 @@ footer {
   grid-template-columns: 1fr 1fr;
   padding: 0;
   margin: 0 auto;
-  width: 100%
+  gap: 0;
 }
 
 .background-color-info {
-  margin-top: 1em;
+  margin-top: 7rem;
 }
 
 .quotes {
   width: 100%;
 }
 
-.smalls {
-  flex-direction: column;
+.people {
+  display: grid;
 }
-
 }
